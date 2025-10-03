@@ -2,7 +2,8 @@
 <html lang="sr-latn-RS">
 <head>
 <meta charset="UTF-8"/>
-<meta name="keywords" content = />
+<meta name="keywords" content = "contact, university Aurora contact, email, subject"/>
+<meta name="description" content = "This page allows you to contact us through an email and we'll get back to you as soon as possible"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +15,9 @@
 </head>
 <body>
 
-        <section class="sub-header">
+        <header class="sub-header">
             <nav>
-                <a href="index.html"><img src="img/logo.png" alt="logo"><p class="logo-text">Aurora</p></a>
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
                 <div class="nav-links" id="navLinks">
                     <i class="fas fa-xmark" onclick="toggleMenu()"></i>
                     <ul>
@@ -31,7 +32,7 @@
                 <i class="fas fa-bars" onclick="toggleMenu()"></i>
             </nav>
             <h1>Contact Us</h1>
-        </section>
+        </header>
         <!-- contact us content -->
 <section class="location">
     <iframe
@@ -67,9 +68,12 @@
         </div>
     <div class="contact-col">
             <form action="">
-                <input type="text" placeholder="Enter your name" required>
-                <input type="text" placeholder="Enter your email address" required>
-                <input type="text" placeholder="Enter your subject" required>
+                <label for="name">Name</label>
+                <input type="text" class="name" placeholder="Enter your name" required>
+                <label for="name">Email</label>
+                <input type="text" class="email" placeholder="Enter your email address" required>
+                <label for="name">Subject</label>
+                <input type="text" class="subject"placeholder="Enter your subject" required>
                 <textarea rows="8" placeholder="Message" required></textarea>
                 <button type="submit" class="hero-btn red-btn">Send Message</button>
             </form>
@@ -80,7 +84,7 @@
 
 
 <!-- Footer -->
-<section class="footer">
+<footer class="footer">
     <div id="newsletter">
         <div id="newsletter-content">
             <h4>Newsletter</h4>
@@ -106,7 +110,7 @@
     <p> Made with <i class="fa-regular fa-heart"> </i> by Nikola Gajić</p>
     </div>
 </div>
-</section>
+</footer>
 <!-- JS for responsive menu -->
 <script> 
     var navLinks = document.getElementById("navLinks");
